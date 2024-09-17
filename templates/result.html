@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!-- <!DOCTYPE html>: Declares the document type, which tells the browser that this is an HTML5 document.
+<html lang="en">: The <html> tag represents the root of an HTML document. The lang="en" attribute specifies that the language of the document is English. -->
+
+<!-- <head>: Contains metadata and links that are used by the browser but not displayed on the webpage.
+    <meta charset="UTF-8">: Specifies the character encoding for the document as UTF-8, which covers most characters and symbols in all languages.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">: This tag ensures the webpage is responsive by setting the width of the viewport to match the width of the device's screen. 
+    <title>Sales Prediction Result</title>: Specifies the title of the page that will be displayed on the browser tab.
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">: Links an external CSS file for styling the webpage. The {{ url_for('static', filename='styles.css') }} is a Flask/Jinja2 template expression that generates the correct URL for the CSS file located in the static directory. 
+    Flask is a Python web framework, and this expression dynamically generates the URL. -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +16,15 @@
     <title>Sales Prediction Result</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
+
+<!-- <body>: Contains the visible content of the webpage.
+    <div class="container">: A <div> is a container for grouping elements together. 
+        The class="container" applies styles defined for the class container in the CSS file.
+    <h1>Sales Prediction Result</h1>: Displays a heading at the top of the page. <h1> is the largest heading tag, used for main titles.
+    <p>Predicted Sales: {{ prediction }}</p>: A paragraph element that displays the text "Predicted Sales:" followed by the actual prediction value. 
+    {{ prediction }} is a Flask/Jinja2 template expression that dynamically inserts the predicted sales value calculated in the backend.
+    <a href="/">Go Back</a>: An anchor (<a>) element that creates a hyperlink. 
+        The href="/" attribute specifies that clicking the link will take the user back to the homepage (/). -->
 <body>
     <div class="container">
         <h1>Sales Prediction Result</h1>

@@ -9,3 +9,10 @@ After the model predicts the sales, the result is rendered on the same HTML page
 Running the Application:
 Save the app.py and the index.html file in the correct directory structure (templates/index.html).
 
+A gradient background for the body to create a more dynamic look.
+A card-like design for the container with a subtle hover effect.
+Improved typography with a more modern font stack.
+Enhanced input fields with focus effects.
+A more attractive and interactive button design.
+Subtle animations for the container and form elements to create a smoother user experience.
+Responsive design considerations to ensure the form looks good on various screen sizes.
