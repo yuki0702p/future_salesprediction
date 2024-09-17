@@ -1,14 +1,15 @@
-2. HTML Template:
-You need to create an HTML file that will act as the web page for your Flask app. 
-Create a folder named templates in the same directory as your app.py file, and inside that folder, create a file named index.html.
+HTML Template:
+Created an HTML file that will act as the web page for Flask app. 
+Created a folder named templates in the same directory as web_application.py file, and inside that folder, created a file named index.html.
 
 The Flask app now renders the index.html page when the user visits the home route (/).
 The form submits the values for TV, Radio, and Newspaper spend to the /predict route using a POST request.
 After the model predicts the sales, the result is rendered on the same HTML page inside a Bootstrap-styled success alert.
 
 Running the Application:
-Save the app.py and the index.html file in the correct directory structure (templates/index.html).
+Save the web_application.py and the index.html file in the correct directory structure (templates/index.html).
 
+The CSS gives us following webpage:
 A gradient background for the body to create a more dynamic look.
 A card-like design for the container with a subtle hover effect.
 Improved typography with a more modern font stack.
